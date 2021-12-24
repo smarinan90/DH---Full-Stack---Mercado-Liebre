@@ -1,0 +1,427 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/*NORMALIZE*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*VARIABLES*/
+
+:root{
+    /* COLORS */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-ocuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --negro: #000000;
+    --blanco: #ffffff;
+    /* FONT SIZE */
+    --text-sm: 1.2em;
+    --text-md: 1.6em;
+    --text-lg: 1.8em;
+    --title: 2.4em;
+}
+
+/* COMMON STYLES */
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: var(--title);
+    margin: 18px 0px;
+}
+
+h3 {
+    font-size: var(--text-md);
+}
+
+h4 {
+    font-size: var(--text-md);
+}
+
+header nav{
+    font-size: var(--text-sm);
+}
+
+p {
+    font-size: var(--text-sm);
+}
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 9px;
+}
+
+/*HEADER*/
+
+header{
+    background-color: var(--amarillo);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+header nav ul {
+    display: none;
+}
+
+.nav-list {
+    display: none;
+}
+
+header p {
+    text-align: center;
+}
+
+.header-upper-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    width: 50%;
+}
+
+.search-bar{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    display: block;
+    width: 75%;
+    border: 1px var(--gris-claro) solid;
+    border-radius: 5px 0 0 5px;
+    padding: 3px;
+}
+.search-bar button {
+    display: block;
+    width: 15%;
+    border: 1px var(--gris-claro) solid;
+    border-radius: 0 5px 5px 0;
+    padding: 3px;
+    color: var(--gris-ocuro);
+}
+
+.cuotas{
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+}
+
+.burger-menu{
+    width: 100%;
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color: var(--celeste);
+    color: var(--blanco);
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 9px;
+    margin: 18px 0px;
+}
+
+.img-banner{
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    background-color: var(--gris-claro);
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 90%; */
+    /* justify-content: center; */
+}
+
+main section h2 {
+    color: var(--gris-ocuro);
+    padding-left: 5%;
+}
+
+.img-product img {
+    width: 100%;
+}
+
+/* main section article {
+    margin: 15px;
+} */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product {
+    background-color: var(--blanco);
+    margin: 12px 5%;
+    transition: transform 1s;
+}
+
+.product-card {
+    background-color: var(--blanco);
+    border-top: solid var(--gris-claro) 1px;
+    padding: 15px;
+    position: relative;
+}
+
+.fa-truck{
+    color: var(--verde);
+    font-size: var(--text-md);
+    padding: 5px;
+    border: var(--verde) 1px solid;
+    border-radius: 50%;
+    background-color: var(--blanco);
+    width: 30px;
+    height: 30px;
+    display: block ;
+    position: absolute ;
+    right: 20px ;
+    top: -15px ;
+    transition: transform 0.6s;
+}
+
+.price {
+    font-size: var(--text-lg);
+    /* width: 30%; */
+}
+
+.discount {
+    font-size: var(--text-md);
+    color: var(--verde);
+    /* width: 70%; */
+}
+
+.description {
+    color: var(--gris-ocuro);
+    padding-top: 18px;
+    padding-bottom: 6px;
+    display: none;
+}
+
+.product:hover {
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+.product:hover .description {
+    display: block;
+}
+
+.product:hover .fa-truck {
+    transform: rotate(-90deg);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer section {
+    padding: 30px;
+}
+
+.icon {
+    font-size: 3.2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+.icon:hover {
+    color: purple;
+}
+
+.footer-h3 {
+    color: var(--gris-ocuro);
+}
+
+.footer-p {
+    color: var(--gris-ocuro);
+}
+
+.copyright {
+    text-align: left;
+}
+
+/* REGISTER & LOGIN */
+
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 36px 15px;
+}
+
+.register {
+    padding: 12px 0px;
+    width: 100%;
+}
+
+.register input {
+    border-radius: 6px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--blanco);
+    padding-left: 15px;
+}
+
+.register ::placeholder{
+    font-size: var(--text-sm);
+    color: var(--gris-ocuro);
+}
+
+.birth {
+    font-size: var(--text-md);
+    font-weight: bold;
+    color: var(--gris-ocuro);
+}
+
+#birthdate {
+    margin-top: 24px;
+}
+
+.costumer,
+.interest,
+.user-img {
+    width: 100%;
+    margin: 12px 0px;
+    color: var(--gris-ocuro);
+}
+
+.interest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-img h4,
+.interest h4,
+.costumer h4{
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.costumer label {
+    font-size: var(--text-sm);
+    margin-right: 45px;
+}
+
+.interest label {
+    font-size: var(--text-sm);
+    width: 100%;
+    padding: 6px 0;
+}
+
+.interest label input,
+.costumer label input {
+    margin-right: 6px;
+}
+
+.send-button {
+    font-size: var(--text-lg);
+    background-color: var(--celeste);
+    color: var(--blanco);
+}
+
+.send-button:hover {
+    background-color: var(--azul);
+}
+
+.user-log-title {
+    color: var(--gris-ocuro);
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 361px) {
+
+    .logo,
+    .search-bar,
+    .cuotas {
+        width: 30vw;
+    }
+
+    header nav ul {
+        display: block;
+        list-style-type: none;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 15px;
+    }
+    
+    .nav-list li{
+        display: block;
+        padding: 3px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .description{
+        display: block;
+    }
+    .product {
+        max-width: 45%;
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        margin: 3% 0;
+    }
+
+    .register-form {
+        margin: 0 13.5%;
+    }
+
+    /* .register input {
+        width: 60%;
+    } */
+}
+
+@media screen and (min-width: 769px) {
+    .product{
+        max-width: 22.5%;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .terms {
+        width: 33%;
+    }
+
+    .register-form {
+        margin: 0 30%;
+    }
+}
